@@ -1,0 +1,20 @@
+INSERT INTO clinical.consultation_diagnoses (consultation_id, diagnosis_code, diagnosis_type) 
+VALUES 
+    (1, 'J00', 'primary'),
+    (2, 'I10', 'primary'),
+    (3, 'E11.9', 'secondary'),
+    (4, 'M54.5', 'primary'),
+    (5, 'K21.9', 'primary'),
+    (6, 'I10', 'secondary'),
+    (7, 'J00', 'primary'),
+    (8, 'M54.5', 'presumptive'),
+    (9, 'E11.9', 'primary'),
+    (10, 'K21.9', 'secondary'),
+    (11, 'J00', 'confirmed'),
+    (12, 'I10', 'primary'),
+    (13, 'M54.5', 'primary'),
+    (14, 'E11.9', 'primary'),
+    (15, 'K21.9', 'presumptive'),
+    (16, 'J00', 'primary'),
+    (17, 'I10', 'confirmed'),
+    (18, 'M54.5', 'secondary');

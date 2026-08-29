@@ -1,0 +1,20 @@
+INSERT INTO clinical.prescriptions (medication_name, dosage, instructions, tenant_id, consultation_id) 
+VALUES
+    ('Paracetamol','500 mg','Tomar 1 tableta cada 8 horas', 1, 1),
+    ('Ibuprofeno','400 mg', 'Tomar 1 tableta despues del almuerzo', 1, 2),
+    ('Acetaminofen', '500mg','Tomar 1 tableta cada 8 horas', 1, 3),
+    ('Corisan', '100ml','Tomar una cucharadita cada 8 horas', 1, 4),
+    ('Penicilina V', '500 mg', 'Tomar una tableta cada 24 horas', 1, 5),
+    ('Losartán', '50 mg', 'Tomar 1 tableta por la mañana para control de presión.', 1, 6),
+    ('Loratadina', '10 mg', 'Tomar 1 tableta por la noche para alergia en piel.', 1, 7),
+    ('Cetirizina', '10 mg', 'Tomar 1 tableta al día por alergia estacional.', 1, 8),
+    ('Orlistat', '120 mg', 'Tomar 1 cápsula con cada comida principal.', 1, 9),
+    ('Diclofenaco', '50 mg', 'Tomar 1 tableta cada 12 horas por dolor articular.', 1, 10),
+    ('Complejo B', '1 tableta', 'Tomar 1 diaria como suplemento.', 1, 11),
+    ('Amoxicilina', '500 mg', 'Tomar cada 8 horas por 7 días por infección.', 1, 12),
+    ('Butilhioscina', '10 mg', 'Tomar 1 tableta para dolor abdominal agudo.', 2, 13),
+    ('Acetaminofen', '1 g', 'Tomar 1 tableta cada 6 horas para bajar la fiebre.', 2, 14),
+    ('Metformina', '850 mg', 'Tomar 1 tableta con el desayuno.', 2, 15),
+    ('Levotiroxina', '50 mcg', 'Tomar 1 tableta en ayunas, 30 min antes de comer.', 2, 16),
+    ('Sumatriptán', '50 mg', 'Tomar 1 tableta al inicio de la migraña.', 2, 17),
+    ('Clorhexidina', 'Jabón al 4%', 'Lavar la zona preoperatoria la noche antes.', 2, 18);
