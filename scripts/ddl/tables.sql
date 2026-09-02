@@ -139,6 +139,24 @@ CONSTRAINT pk_icd10_code PRIMARY KEY (code)
 
 
 
+
+ CREATE TABLE clinical.consultations (
+id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
+symptoms TEXT NOT NULL,
+clinical_notes TEXT NOT NULL,
+created_at TIMESTAMPTZ DEFAULT NOW(),
+public_id UUID UNIQUE DEFAULT gen_random_uuid(),
+appointment_id INT NOT NULL,
+nt_id INT NOT NULL,
+CONSTRAINT pk_consultation_id PRIMARY KEY (id),
+CONSTRAINT fk_consultation_appointment FOREIGN KEY (appointment_id) REFERENCES clinical.appointments (id),
+CONSTRAINT fk_consultation_tenant FOREIGN KEY (tenant_id) REFERENCES main.tenants (id),
+CONSTRAINT unq_consultation_appointment UNIQUE (appointment_id)
+); 
+
+
+
+
 CREATE TABLE clinical.consultation_diagnoses (
 consultation_id INT NOT NULL,
 diagnosis_code VARCHAR(10) NOT NULL,
